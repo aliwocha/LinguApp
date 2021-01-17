@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a42f50e-93cb-40a9-90e9-785caa2dd52f" name="Default Changelist" comment="Update solution to all tasks">
+    <list default="true" id="4a42f50e-93cb-40a9-90e9-785caa2dd52f" name="Default Changelist" comment="Add .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/devdata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devdata.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devdata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/devdata.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,15 +60,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610797577564</updated>
       <workItem from="1610797581215" duration="34955000" />
-      <workItem from="1610914839194" duration="1526000" />
+      <workItem from="1610914839194" duration="1677000" />
+      <workItem from="1610916612259" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="Update solution to all tasks">
       <created>1610898435813</created>
@@ -104,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610898435813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Delete unnecessary files; update in devdata.csv">
+      <created>1610916556535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610916556535</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add .gitignore">
+      <created>1610916961730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610916961730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update solution to all tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update solution to all tasks" />
+    <MESSAGE value="Delete unnecessary files; update in devdata.csv" />
+    <MESSAGE value="Add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore" />
   </component>
 </project>
