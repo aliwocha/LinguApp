@@ -1,13 +1,19 @@
-package pl.javastart.di;
+package pl.javastart.repository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import pl.javastart.model.Entry;
+import pl.javastart.service.FileService;
 
 import java.io.IOException;
 import java.util.*;
 
-class EntryRepository {
+@Repository
+public class EntryRepository {
     private List<Entry> entries;
 
-    EntryRepository() {
-        FileService fileService = new FileService();
+    @Autowired
+    public EntryRepository(FileService fileService) {
         try {
             this.entries = fileService.readAllFile();
         } catch (IOException e) {
@@ -15,11 +21,11 @@ class EntryRepository {
         }
     }
 
-    List<Entry> getAll() {
+    public List<Entry> getAll() {
         return entries;
     }
 
-    Set<Entry> getRandomEntries(int number) {
+    public Set<Entry> getRandomEntries(int number) {
         Random random = new Random();
         Set<Entry> randomEntries = new HashSet<>();
         while (randomEntries.size() < number && randomEntries.size() < entries.size()) {
@@ -28,15 +34,15 @@ class EntryRepository {
         return randomEntries;
     }
 
-    void add(Entry entry) {
+    public void add(Entry entry) {
         entries.add(entry);
     }
 
-    int size() {
+    public int size() {
         return entries.size();
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return entries.isEmpty();
     }
 }

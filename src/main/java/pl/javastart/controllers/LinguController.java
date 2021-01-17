@@ -1,22 +1,39 @@
-package pl.javastart.di;
+package pl.javastart.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import pl.javastart.model.Entry;
+import pl.javastart.printers.TextPrinter;
+import pl.javastart.repository.EntryRepository;
+import pl.javastart.service.FileService;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Set;
 
-class LinguController {
+@Controller
+public class LinguController {
     private static final int UNDEFINED = -1;
     private static final int ADD_ENTRY = 0;
     private static final int TEST = 1;
     private static final int CLOSE_APP = 2;
 
-    private EntryRepository entryRepository = new EntryRepository();
-    private FileService fileService = new FileService();
-    private Scanner scanner = new Scanner(System.in);
+    private final EntryRepository entryRepository;
+    private final FileService fileService;
+    private final Scanner scanner;
+    private final TextPrinter printer;
 
-    void mainLoop() {
-        System.out.println("Witaj w aplikacji LinguApp");
+    @Autowired
+    public LinguController(EntryRepository entryRepository, FileService fileService, Scanner scanner, TextPrinter printer) {
+        this.entryRepository = entryRepository;
+        this.fileService = fileService;
+        this.scanner = scanner;
+        this.printer = printer;
+    }
+
+    public void mainLoop() {
+        printer.println("Witaj w aplikacji LinguApp");
         int option = UNDEFINED;
         while(option != CLOSE_APP) {
             printMenu();
@@ -37,35 +54,35 @@ class LinguController {
                 close();
                 break;
             default:
-                System.out.println("Opcja niezdefiniowana");
+                printer.println("Opcja niezdefiniowana");
         }
     }
 
     private void test() {
         if(entryRepository.isEmpty()) {
-            System.out.println("Dodaj przynajmniej jedną frazę do bazy.");
+            printer.println("Dodaj przynajmniej jedną frazę do bazy.");
             return;
         }
         final int testSize = entryRepository.size() > 10? 10 : entryRepository.size();
         Set<Entry> randomEntries = entryRepository.getRandomEntries(testSize);
         int score = 0;
         for (Entry entry : randomEntries) {
-            System.out.printf("Podaj tłumaczenie dla :\"%s\"\n", entry.getOriginal());
+            printer.println(String.format("\nPodaj tłumaczenie dla :\"%s\"", entry.getOriginal()));
             String translation = scanner.nextLine();
             if(entry.getTranslation().equalsIgnoreCase(translation)) {
-                System.out.println("Odpowiedź poprawna");
+                printer.println("Odpowiedź poprawna");
                 score++;
             } else {
-                System.out.println("Odpowiedź niepoprawna - " + entry.getTranslation());
+                printer.println("Odpowiedź niepoprawna - " + entry.getTranslation());
             }
         }
-        System.out.printf("Twój wynik: %d/%d\n", score, testSize);
+        printer.println(String.format("Twój wynik: %d/%d\n", score, testSize));
     }
 
     private void addEntry() {
-        System.out.println("Podaj oryginalną frazę");
+        printer.println("Podaj oryginalną frazę po polsku");
         String original = scanner.nextLine();
-        System.out.println("Podaj tłumaczenie");
+        printer.println("Podaj tłumaczenie");
         String translation = scanner.nextLine();
         Entry entry = new Entry(original, translation);
         entryRepository.add(entry);
@@ -74,18 +91,18 @@ class LinguController {
     private void close() {
         try {
             fileService.saveEntries(entryRepository.getAll());
-            System.out.println("Zapisano stan aplikacji");
+            printer.println("Zapisano stan aplikacji");
         } catch (IOException e) {
-            System.out.println("Nie udało się zapisać zmian");
+            printer.println("Nie udało się zapisać zmian");
         }
-        System.out.println("Bye Bye!");
+        printer.println("Bye Bye!");
     }
 
     private void printMenu() {
-        System.out.println("Wybierz opcję:");
-        System.out.println("0 - Dodaj frazę");
-        System.out.println("1 - Test");
-        System.out.println("2 - Koniec programu");
+        printer.println("Wybierz opcję:");
+        printer.println("0 - Dodaj frazę");
+        printer.println("1 - Test");
+        printer.println("2 - Koniec programu");
     }
 
     private int chooseOption() {

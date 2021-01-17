@@ -1,27 +1,27 @@
-package pl.javastart.di;
+package pl.javastart.model;
 
-class Entry {
+public class Entry {
     private String original;
     private String translation;
 
-    Entry(String original, String translation) {
+    public Entry(String original, String translation) {
         this.original = original;
         this.translation = translation;
     }
 
-    String getOriginal() {
+    public String getOriginal() {
         return original;
     }
 
-    void setOriginal(String original) {
+    public void setOriginal(String original) {
         this.original = original;
     }
 
-    String getTranslation() {
+    public String getTranslation() {
         return translation;
     }
 
-    void setTranslation(String translation) {
+    public void setTranslation(String translation) {
         this.translation = translation;
     }
 
