@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a42f50e-93cb-40a9-90e9-785caa2dd52f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/di/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/model/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/di/EntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/repository/EntryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/di/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/di/LinguApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/LinguApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/di/LinguController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/javastart/controllers/LinguController.java" afterDir="false" />
+    <list default="true" id="4a42f50e-93cb-40a9-90e9-785caa2dd52f" name="Default Changelist" comment="Update solution to all tasks">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devdata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devdata.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +60,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,8 +94,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610797577564</updated>
-      <workItem from="1610797581215" duration="34522000" />
+      <workItem from="1610797581215" duration="34955000" />
+      <workItem from="1610914839194" duration="1526000" />
     </task>
+    <task id="LOCAL-00001" summary="Update solution to all tasks">
+      <created>1610898435813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610898435813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +120,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update solution to all tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update solution to all tasks" />
   </component>
 </project>
