@@ -1,3 +1,5 @@
+## **LinguApp (javastart.pl)**
+
 Aplikacja LinguApp służy do nauki słówek. Posiada ona dwie główne funkcjonalności:
 * dodawanie nowych słówek do bazy,
 * test językowy polegający na wylosowaniu kilku fraz i konieczności ich poprawnego przetłumaczenia.
