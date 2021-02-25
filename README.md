@@ -22,4 +22,3 @@ The core of LinguApp together with the main logic of the application has been pr
 ```
 mvnw.cmd spring-boot:run
 ```
-Go to the following page in your browser: [http://localhost:8080](http://localhost:8080)
