@@ -27,29 +27,4 @@ public class CaesarCipherService implements CipherService {
         }
         return String.copyValueOf(decryptedData);
     }
-
-    // Można też tak:
-//    @Override
-//    public String encrypt(String text) {
-//        return text.chars()
-//                .map(CaesarCipherService::shift)
-//                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
-//                .toString();
-//    }
-//
-//    @Override
-//    public String decrypt(String cipher) {
-//        return cipher.chars()
-//                .map(CaesarCipherService::shiftBack)
-//                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
-//                .toString();
-//    }
-//
-//    private static int shift(int character) {
-//        return character + SHIFT;
-//    }
-//
-//    private static int shiftBack(int character) {
-//        return character - SHIFT;
-//    }
 }
