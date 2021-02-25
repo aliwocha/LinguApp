@@ -1,11 +1,25 @@
 ## **LinguApp (javastart.pl)**
 
-Aplikacja LinguApp służy do nauki słówek. Posiada ona dwie główne funkcjonalności:
-* dodawanie nowych słówek do bazy,
-* test językowy polegający na wylosowaniu kilku fraz i konieczności ich poprawnego przetłumaczenia.
+The app is made for learning english vocabulary and its trasnlation to polish language. It has two major functionalities:
+* adding new words to the database,
+* language test that involves correct translation of randomly generated words from the database.
 
-Szkielet projektu aplikacji LinguApp wraz z główną logiką aplikacji został wcześniej przygotowany przez twórcę kursu. Moim zadaniem było rozszerzyć jej możliwości i dodać nowe funkcjonalności, które w przyszłości ułatwią wprowadzanie zmian. Zmiany wprowadzone przeze mnie:
-* dodanie do projektu Springa i zastosowanie wstrzykiwania zależności w miejscach, w których to było konieczne
-* możliwość modyfikacji formatu tekstu drukowanego w konsoli ze zwykłego na tekst pisany wielkimi literami
-* odczytywanie ścieżki do pliku źródłowego z pliku application.properties
-* dodanie profili produkcyjnego i deweloperskiego oraz szyfrowania pliku szyfrem Cezara w profilu produkcyjnym
+The core of LinguApp together with the main logic of the application has been prepared originally by the creator of the course. My task was to add some functionalities to the app, which will facilitate adding changes to the code in the future. Changes introduced by me:
+* adding Spring dependency to the project and use dependency injection where necessary
+* adding an option of text formatting to upper case
+* adding production and developer profiles, and also adding text encryption in production profile using Caesar cipher
+
+### **How to run:**
+1. Clone the repository onto your own computer.
+
+2. Go to the main folder of the project and run this command:
+
+*for the Unix system:
+```
+./mvnw spring-boot:run
+```
+*for the Windows CMD:
+```
+mvnw.cmd spring-boot:run
+```
+Go to the following page in your browser: [http://localhost:8080](http://localhost:8080)
