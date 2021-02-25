@@ -1,4 +1,4 @@
-## **LinguApp (javastart.pl)**
+## **LinguApp**
 
 The app is made for learning english vocabulary and its trasnlation to polish language. It has two major functionalities:
 * adding new words to the database,
