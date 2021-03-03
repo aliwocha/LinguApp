@@ -9,6 +9,10 @@ The core of Lingu App together with the main logic of the application has been p
 * adding an option of text formatting to upper case
 * adding production and developer profiles, and also adding text encryption in production profile using Caesar cipher
 
+### **Technology used:**
+* Java
+* SpringBoot
+
 ### **How to run:**
 1. Clone the repository onto your own computer.
 
@@ -22,7 +26,3 @@ The core of Lingu App together with the main logic of the application has been p
 ```
 mvnw.cmd spring-boot:run
 ```
-
-### **Technology used:**
-* Java
-* SpringBoot
