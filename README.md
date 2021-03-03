@@ -22,3 +22,7 @@ The core of Lingu App together with the main logic of the application has been p
 ```
 mvnw.cmd spring-boot:run
 ```
+
+### **Technology used:**
+* Java
+* SpringBoot
