@@ -10,7 +10,7 @@ The core of Lingu App together with the main logic of the application has been p
 * adding production and developer profiles, and also adding text encryption in production profile using Caesar cipher
 
 ### **Technology used:**
-* Java
+* Java 11
 * SpringBoot
 
 ### **How to run:**
