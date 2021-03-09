@@ -1,6 +1,6 @@
 ## **Lingu App**
 
-The app is made for learning english vocabulary and its trasnlation to polish language. It has two major functionalities:
+The app is made for learning english vocabulary and its translation to polish language. It has two major functionalities:
 * adding new words to the database,
 * language test that involves correct translation of randomly generated words from the database.
 
