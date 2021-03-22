@@ -1,4 +1,4 @@
-## **Lingu App**
+# **Lingu App**
 
 The app is made for learning english vocabulary and its translation to polish language. It has two major functionalities:
 * adding new words to the database,
@@ -9,20 +9,20 @@ The core of Lingu App together with the main logic of the application has been p
 * adding an option of text formatting to upper case
 * adding production and developer profiles, and also adding text encryption in production profile using Caesar cipher
 
-### **Technology used:**
+## **Technology used:**
 * Java 11
 * SpringBoot
 
-### **How to run:**
+## **How to run:**
 1. Clone the repository onto your own computer.
 
 2. Go to the main folder of the project and run this command:
 
-*for the Unix system:
+* for the Unix system:
 ```
 ./mvnw spring-boot:run
 ```
-*for the Windows CMD:
+* for the Windows CMD:
 ```
 mvnw.cmd spring-boot:run
 ```
