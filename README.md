@@ -4,7 +4,7 @@ The app is made for learning english vocabulary and its translation to polish la
 * adding new words to the database,
 * language test that involves correct translation of randomly generated words from the database.
 
-The core of Lingu App together with the main logic of the application was prepared originally by the creator of the course. My task was to add some functionalities to the app, which will facilitate adding changes to the code in the future. Changes introduced by me:
+The core of Lingu App together with the main logic of the application was prepared originally by the creator of the course at javastart.pl. My task was to add some functionalities to the app, which will facilitate adding changes to the code in the future. Changes introduced by me:
 * adding Spring dependency to the project and use dependency injection where necessary
 * adding an option of text formatting to upper case
 * adding production and developer profiles, and also adding text encryption in production profile using Caesar cipher
